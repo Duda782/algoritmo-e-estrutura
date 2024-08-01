@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h3>Login</h3>
+        <input type="text" placeholder="Login" id="Login">
+        <h3>senha</h3>
+        <input type="password" placeholder="senha" id="senha">
+        <h3></h3>
+        <input type="submit" onclick="logar(); return false">
+    </form>
+
+    <script>
+        function logar() {
+            var Login = document.getElementById("Login").value;
+            var senha = document.getElementById("senha").value;
+
+            if (Login == "maria" && senha == "1234") {
+                alert("sucesso")
+                location.href="https://github.com/dashboard"
+            } else{
+                alert("usuario ou senha incorreto")
+            }
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
